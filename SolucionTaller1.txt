@@ -1,0 +1,173 @@
+TALLER
+Este taller consiste en mejorar las habilidades de los conceptos aprendidos en clase.
+
+1. Implemente en VHDL un FlipFlop de 1bit, con entradas D, Reset, CLK, y una salida Dout.
+         __________ 
+D-------|          |    
+        |          |    
+RST-----|          |_______Dout    
+        |          |
+CLK-----|>         |
+        |__________|
+
+		
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee. std_logic_arith.all;
+use ieee. std_logic_unsigned.all;
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity Flipflop is
+    Port ( D : in  STD_LOGIC;
+           RST : in  STD_LOGIC;
+           CLK : in  STD_LOGIC;
+           DOUT : out  STD_LOGIC);
+end Flipflop;
+
+architecture Behavioral of Flipflop is
+		signal count : STD_LOGIC;
+		
+	
+begin
+
+	process (CLK) is
+
+		begin
+			if rising_edge (CLK) then 
+				count <= count + 1;
+			end if;
+		end process;
+
+		DOUT <= count;
+
+end Behavioral;
+
+
+2. Escriba los 4 principios de diseño de hardware aprendidos en clase.
+
+1)Principio del diseño de Hardware: La simplicidad favorece la regularidad.
+2)Principio del diseño de Hardware: Entre más pequeño más rápido.
+3)Tercer Principio del diseño de Hardware: Hacer el caso común más rápido.
+4)Cuarto Principio del diseño de Hardware: Un buen diseño demanda compromisos.
+
+3. Convertir a instrucciones de bajo nivel.
+
+int x=0; 
+int y =8; 
+int z = 1; 
+
+y=x+3;
+z=z+3;
+x=(x-z)+(3+y);
+
+ADD %go,0,%L0
+ADD %go,0,%L1
+ADD %go,0,%L2
+
+ADD %L0,3,%L3
+ADD %L2,3,%L4
+
+SUB %L0,%L4,%L5
+ADD %L3,3,%L6
+
+ADD %L5,%L6,%L0
+
+
+
+4. Usar el ld, y st.
+a[4]= a[2]+x;
+
+ld[%L0+ (4*2)],%L1
+Add %L1,%L2,%L2
+st %L2, [%L0+(4*4)]
+
+y[0] = y[40]+13;
+
+ld[%L0+ (40*4)],%L1
+Add %L1,13,%L2
+st %L2,[%L0+(4*0)]
+
+
+5. Convertir a lenguaje de máquina.
+a.
+int main(){
+    
+    int i =3; p=2;
+    return i+3;
+}
+
+Formato 3  
+
+10	10000	000000	00000	1	0000000000011
+
+Formato 3 
+
+10	10000	000000	00000	1	0000000000010
+
+
+b.
+int main(){
+    int p=3; x=1; z=4;
+    int w=0; 
+    w=(p+40)+(x-z);
+    return 0; 
+}
+
+
+Formato 3a
+
+10	10001	000000	00000	1	0000000000011
+
+Formato 3b
+
+10	10010	000000	00000	1	0000000000001
+
+Formato 3c
+
+10	10011	000000	00000	1	0000000000100
+
+Formato 3d
+
+10	10100	000000	00000	1	0000000000000
+
+Formato 3e
+
+10	10001	000000	10001	1	0000000101000
+
+Formato 3f
+
+10	10010	000100	10010	0	00000000	10011
+
+Formato 3g
+
+10	10100	000000	10001	0	00000000	10100
+
+6. Inicializar las siguientes variables negativas usando OR.
+n=-12,
+01100
+___+1__
+01101
+
+a=-11,
+
+01011
+___+1__
+01100
+
+
+b=-14
+
+01110
+___+1
+01111
+
+
+
+
