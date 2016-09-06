@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/utp/Desktop/registro/registro/registro.xst" -ofn "C:/Users/utp/Desktop/registro/registro/registro.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 registro.ngc registro.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o registro_map.ncd registro.ngd registro.pcf 
+par -w -intstyle ise -ol high -t 1 registro_map.ncd registro.ncd registro.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml registro.twx registro.ncd -o registro.twr registro.pcf 
+netgen -intstyle ise -ar Structure -tm registro -w -dir netgen/synthesis -ofmt vhdl -sim registro.ngc registro_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Users/utp/Desktop/registro/registro/registro.xst" -ofn "C:/Users/utp/Desktop/registro/registro/registro.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 registro.ngc registro.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o registro_map.ncd registro.ngd registro.pcf 
+par -w -intstyle ise -ol high -t 1 registro_map.ncd registro.ncd registro.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml registro.twx registro.ncd -o registro.twr registro.pcf 
