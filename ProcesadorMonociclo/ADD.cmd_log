@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Mis Documentos/Escritorio/Procesador Monociclo/ProcesadorMonociclo/ADD.xst" -ofn "E:/Mis Documentos/Escritorio/Procesador Monociclo/ProcesadorMonociclo/ADD.syr" 
