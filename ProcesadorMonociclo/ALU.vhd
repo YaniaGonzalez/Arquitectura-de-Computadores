@@ -19,9 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
-use IEEE.numeric_std.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -33,56 +31,38 @@ use IEEE.numeric_std.all;
 --use UNISIM.VComponents.all;
 
 entity ALU is
-	Port ( Dato_Entrada1 : in  STD_LOGIC_VECTOR (31 downto 0);
-          Dato_Entrada2 : in  STD_LOGIC_VECTOR (31 downto 0);
-          Operador : in  STD_LOGIC_VECTOR (2 downto 0);
-          Resultado : out  STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000"
+	Port ( ENTRADA_RS1 : in  STD_LOGIC_VECTOR (31 downto 0);
+          ENTRADA_RS2 : in  STD_LOGIC_VECTOR (31 downto 0);
+          OPERADOR_UC : in  STD_LOGIC_VECTOR (5 downto 0);
+          SALIDA_ALU : out  STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000"
 			 );
 end ALU;
 
 architecture Behavioral of ALU is
 
 begin
-	 process (Operador, Dato_Entrada1, Dato_Entrada2)
+	 process (ENTRADA_RS1, ENTRADA_RS2, OPERADOR_UC)
  begin
-		if (Operador = "000") then --Suma
-			Resultado <= Dato_Entrada1 + Dato_Entrada2;
-		end if;
-		if (Operador = "001") then --Resta
-			if (Dato_Entrada1 <= Dato_Entrada2) then
-					Resultado <= (others => '0');
-			end if;
-			if (Dato_Entrada1 > Dato_Entrada2) then
-				Resultado <= Dato_Entrada1 - Dato_Entrada2;
-			end if;
-		end if;
-		if (Operador = "010") then --And
-			Resultado <= Dato_Entrada1 and Dato_Entrada2;
-		end if;
-		if (Operador = "100") then --Or
-			Resultado <= Dato_Entrada1 or Dato_Entrada2;
-		end if;
-		if (Operador = "101") then --Menor Que --slt
-			if Dato_Entrada1 < Dato_Entrada2 then 
-				Resultado <= "00000000000000000000000000000001";
-			else
-				Resultado <= (others => '0'); --Mayor que
-			end if;
-		end if;
-		if (Operador = "011") then --beq
-			if Dato_Entrada1 = Dato_Entrada2 then
-				Resultado <= (others => '0');
-			else
-				Resultado <= (others => '0');
-			end if;
-		end if;
-		if (Operador = "111") then --bne
-			if Dato_Entrada1 = Dato_Entrada2 then
-				Resultado <= (others => '0');
-			else
-				Resultado <= (others => '0');
-			end if;
-		end if;
+		case (OPERADOR_UC) is 
+			when "000001" => -- add
+				SALIDA_ALU <= ENTRADA_RS1 + ENTRADA_RS2;
+			when "000010" => -- sub
+				SALIDA_ALU <= ENTRADA_RS1 - ENTRADA_RS2;
+			when "000011" => --and
+				SALIDA_ALU <= ENTRADA_RS1 and ENTRADA_RS2;
+			when "000100" => --andn
+				SALIDA_ALU <= ENTRADA_RS1 nand ENTRADA_RS2;
+			when "000101" => -- or
+				SALIDA_ALU <= ENTRADA_RS1 or ENTRADA_RS2; 
+			when "000110" => -- orn
+				SALIDA_ALU <= ENTRADA_RS1 nor ENTRADA_RS2;
+			when "000111" => -- xor
+				SALIDA_ALU <= ENTRADA_RS1 xor ENTRADA_RS2;
+			when "001000" => -- xorn
+				SALIDA_ALU <= ENTRADA_RS1 xnor ENTRADA_RS2;
+			when others => -- Cae el nop
+				SALIDA_ALU <= "00000000000000000000000000000000";
+		end case;
 
 	end process;
 end Behavioral;

@@ -34,14 +34,15 @@ use IEEE.numeric_std.all;
 
 entity ADD is
     Port ( DIRECCION_A_PC : in  STD_LOGIC_VECTOR (31 downto 0);
-           SALIDA_ADD : out  STD_LOGIC_VECTOR(31 downto 0):="00000000000000000000000000000001");
+			  ENTRADA_SUMADOR : in  STD_LOGIC_VECTOR (31 downto 0);
+           SALIDA_A_NPC : out  STD_LOGIC_VECTOR(31 downto 0));
 end ADD;
 
 architecture Behavioral of ADD is
 
 begin
 		
-		SALIDA_ADD <= DIRECCION_A_PC + 1;
+		SALIDA_A_NPC <= DIRECCION_A_PC + ENTRADA_SUMADOR;
 
 end Behavioral;
 

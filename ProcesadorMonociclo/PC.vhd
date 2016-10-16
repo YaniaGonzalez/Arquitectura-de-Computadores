@@ -19,9 +19,6 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
-use IEEE.numeric_std.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -33,24 +30,24 @@ use IEEE.numeric_std.all;
 --use UNISIM.VComponents.all;
 
 entity PC is
- Port ( SalidaMuxPC : in  STD_LOGIC_VECTOR (31 downto 0);
-           Clk : in  STD_LOGIC;
-           DireccionPC : out  STD_LOGIC_VECTOR (31 downto 0));
+ Port ( ENTRADA_NPC : in  STD_LOGIC_VECTOR (31 downto 0);
+        CLK: in  STD_LOGIC;
+		  RST: in  STD_LOGIC;
+        SALIDA_PC : out  STD_LOGIC_VECTOR (31 downto 0));
 end PC;
 
 architecture Behavioral of PC is
 
 begin
-	process (Clk, SalidaMuxPC)
+	process (CLK, ENTRADA_NPC,RST)
 		begin
-			if falling_EDGE(Clk)then
-				if (SalidaMuxPC(0)/= '0' and SalidaMuxPC(0) /= '1')then
-					DireccionPC <= (others=>'0');
-				else
-					DireccionPC<=SalidaMuxPC;
+		if (rising_edge(CLK)) then
+				if ( RST ='1') then
+	          SALIDA_PC <= "00000000000000000000000000000000";
+			else 
+				 SALIDA_PC <= ENTRADA_NPC;
 				end if;
 			end if;
 	end process;
-
 end Behavioral;
 

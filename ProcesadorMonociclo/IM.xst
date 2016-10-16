@@ -1,5 +1,5 @@
-set -tmpdir "E:/Mis Documentos/Escritorio/Procesador Monociclo/ProcesadorMonociclo/xst/projnav.tmp"
-set -xsthdpdir "E:/Mis Documentos/Escritorio/Procesador Monociclo/ProcesadorMonociclo/xst"
+set -tmpdir "C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo/xst"
 run -compileonly yes
 -p xc7a100t-3-csg324
 -top IM

@@ -20,7 +20,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
-use IEEE.numeric_std.all;
+use std.textio.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -32,37 +32,41 @@ use IEEE.numeric_std.all;
 --use UNISIM.VComponents.all;
 
 entity IM is
-		Port ( DireccionPC : in  STD_LOGIC_VECTOR (31 downto 0);
-				 Instruccion : out  STD_LOGIC_VECTOR (31 downto 0):= "00000000000000000000000000000000"
-			   );
+		   Port ( 
+			  --clk : in STD_LOGIC;
+			  ENTRADA_PC : in  STD_LOGIC_VECTOR (31 downto 0);
+           RST : in  STD_LOGIC;
+           SALIDA_IM : out  STD_LOGIC_VECTOR (31 downto 0));
 end IM;
 
-architecture Behavioral of IM is
-	type Memory is array (0 to 31)of std_logic_vector (31 downto 0);
-	signal Posicion : Memory :=  (				
-		"00000000000000000000000000000000", --0		
-		"00000010001100100010000000100000", --1 		
-		"00000010011101000010100000100000", --2 	   	
-		"00000000100001011000000000100000", --3		
-		"00000010001100101010100000100100", --4 		
-		"00010010000000000000000001000000", --5 		
-		"00000000000000000101000000100000", --6 		
-		"00100001000010011111111111111111", --7 		
-		"00010001001000000000000000110000", --8 	   
-		"00000001010100100101000000100000", --9 		
-		"00100001001010011111111111111111", --10 		
-		"00010001010000000000000000111000", --11	   
-		"00000000000010101001000000100000", --12 		
-		"00100001000010001111111111111111", --13 	   
-		"00100010010100100000000000000001", --14 	   
-		"11111111111111111111111111111111", --15 	   
-		others=>x"00000000");
+architecture arqInstructionMemory of IM is
 
-begin
-	process(DireccionPC)
+	type rom_type is array (0 to 63) of std_logic_vector (31 downto 0);
+		
+	impure function InitRomFromFile (RomFileName : in string) return rom_type is
+		FILE RomFile : text open read_mode is RomFileName;
+		variable RomFileLine : line;
+		variable temp_bv : bit_vector(31 downto 0);
+		variable temp_mem : rom_type;
 		begin
-				Instruccion <= Posicion(conv_integer(DireccionPC(4 downto 0)));						
-		end process;
-
-end Behavioral;
-
+			for I in rom_type'range loop
+				readline (RomFile, RomFileLine);
+				read(RomFileLine, temp_bv);
+				temp_mem(i) := to_stdlogicvector(temp_bv);
+			end loop;
+		return temp_mem;
+	end function;
+	
+	signal instructions : rom_type := InitRomFromFile("im.data");
+	
+begin
+	process(RST,ENTRADA_PC, instructions)
+		begin
+			if(RST = '1')then
+				SALIDA_IM <= "00000000000000000000000000000000";
+			else
+				SALIDA_IM <= instructions(conv_integer(ENTRADA_PC(5 downto 0)));
+			end if;
+		
+	end process;
+end arqInstructionMemory;

@@ -1,16 +1,16 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to E:/Mis Documentos/Escritorio/Procesador Monociclo/ProcesadorMonociclo/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.38 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.42 secs
  
---> Parameter xsthdpdir set to E:/Mis Documentos/Escritorio/Procesador Monociclo/ProcesadorMonociclo/xst
+--> Parameter xsthdpdir set to C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.39 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.42 secs
  
 --> Reading design: PC.prj
 
@@ -39,13 +39,13 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "E:\Mis Documentos\Escritorio\Procesador Monociclo\ProcesadorMonociclo\PC.vhd" into library work
+Parsing VHDL file "C:\Users\Propietario_\Arquitectura-de-Computadores\ProcesadorMonociclo\PC.vhd" into library work
 Parsing entity <PC>.
 Parsing architecture <Behavioral> of entity <pc>.
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 22.36 secs
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 29.78 secs
  
 --> 
 
