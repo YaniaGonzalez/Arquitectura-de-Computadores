@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/ADD.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/ALU.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/IM.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/NPC.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/PC.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/Procesador1.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/RF.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/UC.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+

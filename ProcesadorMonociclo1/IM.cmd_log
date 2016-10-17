@@ -1,0 +1,1 @@
+vhdtdtfi -prj ProcesadorMonociclo -o C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo/IM.vhi -module IM -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work IM.vhd 

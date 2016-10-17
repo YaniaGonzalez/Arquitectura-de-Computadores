@@ -1,0 +1,37 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/tb_procesador1_isim_beh.exe -prj E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/tb_procesador1_beh.prj work.tb_procesador1 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/UC.vhd" into library work
+Parsing VHDL file "E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/RF.vhd" into library work
+Parsing VHDL file "E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/PC.vhd" into library work
+Parsing VHDL file "E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/NPC.vhd" into library work
+Parsing VHDL file "E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/IM.vhd" into library work
+Parsing VHDL file "E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/ALU.vhd" into library work
+Parsing VHDL file "E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/ADD.vhd" into library work
+Parsing VHDL file "E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/Procesador1.vhd" into library work
+Parsing VHDL file "E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/tb_procesador1.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling package textio
+Compiling architecture behavioral of entity ADD [add_default]
+Compiling architecture behavioral of entity NPC [npc_default]
+Compiling architecture behavioral of entity PC [pc_default]
+Compiling architecture arqinstructionmemory of entity IM [im_default]
+Compiling architecture behavioral of entity UC [uc_default]
+Compiling architecture arq_registerfile of entity RF [rf_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture arq_procesador1 of entity Procesador1 [procesador1_default]
+Compiling architecture behavior of entity tb_procesador1
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 23 VHDL Units
+Built simulation executable E:/Mis Documentos/DEscargas/Arquitectura-de-Computadores-a8a1c5b8b1c9ab7c14ec94705048a3a588e5d5db/ProcesadorMonociclo1/tb_procesador1_isim_beh.exe
+Fuse Memory Usage: 37228 KB
+Fuse CPU Usage: 2405 ms
