@@ -1,1 +1,0 @@
-vhdtdtfi -prj ProcesadorMonociclo -o C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo/NPC.vhi -module NPC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work NPC.vhd 

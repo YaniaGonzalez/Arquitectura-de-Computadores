@@ -1,1 +1,0 @@
-vhdtdtfi -prj ProcesadorMonociclo -o C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo/UC.vhi -module UC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work UC.vhd 

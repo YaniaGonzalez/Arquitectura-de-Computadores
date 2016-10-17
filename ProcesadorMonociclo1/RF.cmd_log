@@ -1,1 +1,0 @@
-vhdtdtfi -prj ProcesadorMonociclo -o C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo/RF.vhi -module RF -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RF.vhd 
