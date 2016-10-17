@@ -17,7 +17,7 @@
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
-library IEEE;
+library IEEE, STD;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use std.textio.all;
@@ -41,16 +41,16 @@ end IM;
 
 architecture arqInstructionMemory of IM is
 
-	type rom_type is array (0 to 63) of std_logic_vector (31 downto 0);
+	type rom_type is array (0 to 31) of std_logic_vector (31 downto 0);
 		
 	impure function InitRomFromFile (RomFileName : in string) return rom_type is
 		FILE RomFile : text open read_mode is RomFileName;
-		variable RomFileLine : line;
+		variable RomFileLine : line ;
 		variable temp_bv : bit_vector(31 downto 0);
 		variable temp_mem : rom_type;
 		begin
 			for I in rom_type'range loop
-				readline (RomFile, RomFileLine);
+				readline (RomFile,RomFileLine);
 				read(RomFileLine, temp_bv);
 				temp_mem(i) := to_stdlogicvector(temp_bv);
 			end loop;

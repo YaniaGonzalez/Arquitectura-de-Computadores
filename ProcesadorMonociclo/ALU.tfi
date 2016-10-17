@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+ALU instance_name (
+    .ENTRADA_RS1(ENTRADA_RS1), 
+    .ENTRADA_RS2(ENTRADA_RS2), 
+    .OPERADOR_UC(OPERADOR_UC), 
+    .SALIDA_ALU(SALIDA_ALU)
+    );
+
+

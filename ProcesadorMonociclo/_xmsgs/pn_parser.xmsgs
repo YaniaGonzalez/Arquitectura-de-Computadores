@@ -8,13 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo/tb_ALU.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo/tb_ALU.vhd</arg>&quot; Line <arg fmt="%d" index="2">121</arg>. <arg fmt="%s" index="3">Syntax error near &quot;00000000000000000000000000000111&quot;.</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo/tb_UC.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo/IM.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
