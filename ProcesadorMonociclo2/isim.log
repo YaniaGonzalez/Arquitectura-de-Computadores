@@ -1,5 +1,5 @@
 ISim log file
-Running: E:\Mis Documentos\Escritorio\ProcesadorMonocicloterminar\tb_procesador2_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Mis Documentos/Escritorio/ProcesadorMonocicloterminar/tb_procesador2_isim_beh.wdb 
+Running: C:\Users\Propietario_\Arquitectura-de-Computadores\ProcesadorMonociclo2\tb_procesador2_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo2/tb_procesador2_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -19,26 +19,4 @@ Finished circuit initialization process.
 ERROR: Index 32 out of bound 0 to 31. 
 ERROR: In process IM.vhd:63 
  
-INFO: Simulator is stopped.
-# run 100us
-INFO: Simulator is stopped.
-# run 100us
-INFO: Simulator is stopped.
-# run 100us
-INFO: Simulator is stopped.
-# run 100us
-INFO: Simulator is stopped.
-# run 100us
-INFO: Simulator is stopped.
-# run 100us
-INFO: Simulator is stopped.
-# run all
-INFO: Simulator is stopped.
-# run all
-INFO: Simulator is stopped.
-# run all
-INFO: Simulator is stopped.
-# run 1.00us
-INFO: Simulator is stopped.
-# run all
 INFO: Simulator is stopped.

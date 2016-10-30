@@ -46,19 +46,19 @@ begin
 		case (OPERADOR_UC) is 
 			when "000001" => -- add
 				SALIDA_ALU <= ENTRADA_CRS1 + ENTRADA_CRS2;
-			when "000010" => -- sub
+			when "000101" => -- sub
 				SALIDA_ALU <= ENTRADA_CRS1 - ENTRADA_CRS2;
-			when "000011" => --and
+			when "001001" => --and
 				SALIDA_ALU <= ENTRADA_CRS1 and ENTRADA_CRS2;
-			when "000100" => --andn
+			when "001010" => --andn
 				SALIDA_ALU <= ENTRADA_CRS1 nand ENTRADA_CRS2;
-			when "000101" => -- or
+			when "001101" => -- or
 				SALIDA_ALU <= ENTRADA_CRS1 or ENTRADA_CRS2; 
-			when "000110" => -- orn
+			when "001110" => -- orn
 				SALIDA_ALU <= ENTRADA_CRS1 nor ENTRADA_CRS2;
-			when "000111" => -- xor
+			when "010001" => -- xor
 				SALIDA_ALU <= ENTRADA_CRS1 xor ENTRADA_CRS2;
-			when "001000" => -- xorn
+			when "010010" => -- xorn
 				SALIDA_ALU <= ENTRADA_CRS1 xnor ENTRADA_CRS2;
 			when others => -- Cae el nop
 				SALIDA_ALU <= "00000000000000000000000000000000";

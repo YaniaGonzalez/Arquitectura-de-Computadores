@@ -25,7 +25,7 @@ extern char *STD_TEXTIO;
 static const char *ng1 = "romfile";
 extern char *STD_STANDARD;
 extern char *IEEE_P_2592010699;
-static const char *ng4 = "E:/Mis Documentos/Escritorio/ProcesadorMonocicloterminar/IM.vhd";
+static const char *ng4 = "C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo2/IM.vhd";
 extern char *IEEE_P_3620187407;
 
 char *ieee_p_2592010699_sub_393209765_503743352(char *, char *, char *, char *);
@@ -300,7 +300,7 @@ LAB3:    t1 = (t0 + 2992);
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(66, ng4);
-    t1 = (t0 + 6373);
+    t1 = (t0 + 6477);
     t6 = (t0 + 3072);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
