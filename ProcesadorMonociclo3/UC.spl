@@ -1,0 +1,6 @@
+[Inputs]
+=ENTRADA_OP[1:0]=
+=ENTRADA_OP3[5:0]=
+[Outputs]
+=SALIDA_UC[5:0]=
+[BiDir]

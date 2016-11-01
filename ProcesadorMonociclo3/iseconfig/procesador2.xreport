@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-30T14:31:32</DateModified>
+  <DateModified>2016-11-01T14:24:53</DateModified>
   <ModuleName>procesador2</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>E:/Mis Documentos/Escritorio/ProcesadorMonociclo3/iseconfig/procesador2.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/Mis Documentos/Escritorio/ProcesadorMonociclo3\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo3/iseconfig/procesador2.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo3\</ImplementationReportsDirectory>
   <DateInitialized>2016-10-30T12:05:18</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
