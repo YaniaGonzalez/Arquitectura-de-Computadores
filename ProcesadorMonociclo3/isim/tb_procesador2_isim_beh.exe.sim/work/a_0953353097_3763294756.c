@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "E:/Mis Documentos/Escritorio/ProcesadorMonociclo2/RF.vhd";
+static const char *ng0 = "C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo3/RF.vhd";
 extern char *IEEE_P_3620187407;
 
 unsigned char ieee_p_3620187407_sub_4042748798_3965413181(char *, char *, char *, char *, char *);
@@ -66,7 +66,7 @@ LAB4:    xsi_set_current_line(58, ng0);
     t2 = *((char **)t1);
     t1 = (t0 + 1032U);
     t5 = *((char **)t1);
-    t1 = (t0 + 6196U);
+    t1 = (t0 + 6436U);
     t13 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t5, t1);
     t14 = (t13 - 0);
     t11 = (t14 * 1);
@@ -86,7 +86,7 @@ LAB4:    xsi_set_current_line(58, ng0);
     t2 = *((char **)t1);
     t1 = (t0 + 1192U);
     t5 = *((char **)t1);
-    t1 = (t0 + 6212U);
+    t1 = (t0 + 6452U);
     t13 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t5, t1);
     t14 = (t13 - 0);
     t11 = (t14 * 1);
@@ -104,8 +104,8 @@ LAB4:    xsi_set_current_line(58, ng0);
     xsi_set_current_line(61, ng0);
     t1 = (t0 + 1672U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6244U);
-    t5 = (t0 + 7756);
+    t1 = (t0 + 6484U);
+    t5 = (t0 + 7996);
     t7 = (t17 + 0U);
     t8 = (t7 + 0U);
     *((int *)t8) = 0;
@@ -129,7 +129,7 @@ LAB3:    t1 = (t0 + 3632);
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(53, ng0);
-    t1 = (t0 + 7660);
+    t1 = (t0 + 7900);
     t6 = (t0 + 3712);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
@@ -138,7 +138,7 @@ LAB2:    xsi_set_current_line(53, ng0);
     memcpy(t10, t1, 32U);
     xsi_driver_first_trans_fast_port(t6);
     xsi_set_current_line(54, ng0);
-    t1 = (t0 + 7692);
+    t1 = (t0 + 7932);
     t5 = (t0 + 3776);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);
@@ -150,7 +150,7 @@ LAB2:    xsi_set_current_line(53, ng0);
     t1 = xsi_get_transient_memory(1280U);
     memset(t1, 0, 1280U);
     t2 = t1;
-    t5 = (t0 + 7724);
+    t5 = (t0 + 7964);
     t3 = (32U != 0);
     if (t3 == 1)
         goto LAB5;
@@ -173,7 +173,7 @@ LAB7:    xsi_set_current_line(62, ng0);
     t9 = *((char **)t8);
     t8 = (t0 + 1672U);
     t10 = *((char **)t8);
-    t8 = (t0 + 6244U);
+    t8 = (t0 + 6484U);
     t14 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t10, t8);
     t18 = (t14 - 0);
     t11 = (t18 * 1);

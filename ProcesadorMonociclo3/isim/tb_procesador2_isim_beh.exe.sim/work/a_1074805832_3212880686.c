@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "E:/Mis Documentos/Escritorio/ProcesadorMonociclo2/NPC.vhd";
+static const char *ng0 = "C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo3/NPC.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1744673427_503743352(char *, char *, unsigned int , unsigned int );
@@ -75,7 +75,7 @@ LAB7:    xsi_set_current_line(48, ng0);
 LAB6:    goto LAB3;
 
 LAB5:    xsi_set_current_line(46, ng0);
-    t3 = (t0 + 4846);
+    t3 = (t0 + 5002);
     t8 = (t0 + 3072);
     t9 = (t8 + 56U);
     t10 = *((char **)t9);

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-01T14:24:53</DateModified>
+  <DateModified>2016-11-01T19:49:16</DateModified>
   <ModuleName>procesador2</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo3/iseconfig/procesador2.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo3\</ImplementationReportsDirectory>
-  <DateInitialized>2016-10-30T12:05:18</DateInitialized>
+  <DateInitialized>2016-11-01T19:14:23</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

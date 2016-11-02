@@ -44,74 +44,74 @@ begin
 if (ENTRADA_OP ="10")then
 			case ENTRADA_OP3 is 
 				
-							when "000000" => -- ADD
-								SALIDA_UC  <= "000001";
-								
-							when "010000" => -- ADDcc
-								SALIDA_UC  <= "000010";
-								
-							when "011000" => -- ADDX
-								SALIDA_UC  <= "000011";
-							
-							when "001000" => -- ADDXcc
-								SALIDA_UC  <= "000100";
+									when "000000" => -- ADD
+										SALIDA_UC  <= "000000";
+											
+										when "010000" => -- ADDcc
+										SALIDA_UC  <= "010000";
+											
+										when "001000" => -- ADDX
+										SALIDA_UC  <= "001000";
+										
+										when "011000" => -- ADDXcc
+										SALIDA_UC  <= "011000";
 
-							when "000100" => -- SUB
-								 SALIDA_UC <= "000101";
-						 
-							when "010100" => -- SUBcc
-								 SALIDA_UC <= "000110";	
-								 
-							when "001100" => -- SUBX
-								 SALIDA_UC <= "000111";	
-                     
-                     when "011100" => -- SUBXcc
-								 SALIDA_UC <= "001000";							
-								 
-							when "000001" => -- AND
-								SALIDA_UC <= "001001";
-								 
-							when "000101" => -- ANDN
-								SALIDA_UC <= "001010";
-							
-                      when "010101" => -- ANDNcc
-								SALIDA_UC <= "001011";
-								 
-							when "010001" => -- ANDcc
-								SALIDA_UC <= "001100";							
-								 
-							when "000010" => -- OR
-								SALIDA_UC <= "001101";
-								
-							when "000110" => -- ORN
-								SALIDA_UC <= "001110";
-								
-							when "010010" => -- ORcc
-								SALIDA_UC <= "001111";
-								
-							when "010110" => -- ORNcc
-								SALIDA_UC <= "010000";	
-								 
-							when "000011" => -- XOR
-								SALIDA_UC  <= "010001"; 
-								
-							when "000111" => -- XNOR
-								SALIDA_UC <= "010010";
-							
-                     when "010011" => -- XORcc
-								SALIDA_UC  <= "010011"; 
-								
-							when "010111" => -- XNORcc
-								SALIDA_UC <= "010100";							
-							when others => --Nop
-								SALIDA_UC <= "111111"; 
-
-
+										when "000100" => -- SUB
+										SALIDA_UC <= "000100";
+									 
+										when "010100" => -- SUBcc
+									   SALIDA_UC <= "010100";	
+											 
+										when "001100" => -- SUBX
+										SALIDA_UC <= "001100";	
+										
+										when "011100" => -- SUBXcc
+										SALIDA_UC <= "011100";							
+											 
+										when "000001" => -- AND
+										SALIDA_UC <= "000001";
+											 
+										when "000101" => -- ANDN
+										SALIDA_UC <= "000101";
+										
+										when "010101" => -- ANDNcc
+										SALIDA_UC <= "010101";
+											 
+										when "010001" => -- ANDcc
+										SALIDA_UC <= "010001";							
+											 
+										when "000010" => -- OR
+										SALIDA_UC <= "000010";
+											
+										when "000110" => -- ORN
+										SALIDA_UC <= "000110";
+											
+										when "010010" => -- ORcc
+										SALIDA_UC <= "010010";
+											
+										when "010110" => -- ORNcc
+										SALIDA_UC <= "010110";	
+											 
+										when "000011" => -- XOR
+										SALIDA_UC  <= "000011"; 
+											
+										when "000111" => -- XNOR
+										SALIDA_UC <= "000111";
+										
+										when "010011" => -- XORcc
+										SALIDA_UC  <= "010011"; 
+											
+										when "010111" => -- XNORcc
+										SALIDA_UC <= "010111";	
+											
+										when others => --otras instrucciones
+										SALIDA_UC <= "111111"; 
+												
 						end case;
-						 
-		end if; 
+				 end if;
+end process;
 
-end process; 
 
 end Behavioral;
+
 

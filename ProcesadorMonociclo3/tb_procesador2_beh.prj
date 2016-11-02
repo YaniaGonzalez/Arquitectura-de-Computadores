@@ -1,6 +1,8 @@
 vhdl work "UC.vhd"
 vhdl work "SEU.vhd"
 vhdl work "RF.vhd"
+vhdl work "PSR_MODIFIER.vhd"
+vhdl work "PSR.vhd"
 vhdl work "PC.vhd"
 vhdl work "NPC.vhd"
 vhdl work "MUX.vhd"

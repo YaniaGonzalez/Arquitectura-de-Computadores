@@ -34,6 +34,7 @@ entity ALU is
 	Port ( ENTRADA_CRS1 : in  STD_LOGIC_VECTOR (31 downto 0);
           ENTRADA_CRS2 : in  STD_LOGIC_VECTOR (31 downto 0);
           OPERADOR_UC : in  STD_LOGIC_VECTOR (5 downto 0);
+			 CARRY : in STD_LOGIC;
           SALIDA_ALU : out  STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000"
 			 );
 end ALU;
@@ -41,29 +42,75 @@ end ALU;
 architecture Behavioral of ALU is
 
 begin
-	 process (ENTRADA_CRS1, ENTRADA_CRS2, OPERADOR_UC)
+	 process (ENTRADA_CRS1, ENTRADA_CRS2, CARRY, OPERADOR_UC)
  begin
 		case (OPERADOR_UC) is 
-			when "000001" => -- add
-				SALIDA_ALU <= ENTRADA_CRS1 + ENTRADA_CRS2;
-			when "000101" => -- sub
-				SALIDA_ALU <= ENTRADA_CRS1 - ENTRADA_CRS2;
-			when "001001" => --and
-				SALIDA_ALU <= ENTRADA_CRS1 and ENTRADA_CRS2;
-			when "001010" => --andn
-				SALIDA_ALU <= ENTRADA_CRS1 nand ENTRADA_CRS2;
-			when "001101" => -- or
-				SALIDA_ALU <= ENTRADA_CRS1 or ENTRADA_CRS2; 
-			when "001110" => -- orn
-				SALIDA_ALU <= ENTRADA_CRS1 nor ENTRADA_CRS2;
-			when "010001" => -- xor
-				SALIDA_ALU <= ENTRADA_CRS1 xor ENTRADA_CRS2;
-			when "010010" => -- xorn
-				SALIDA_ALU <= ENTRADA_CRS1 xnor ENTRADA_CRS2;
-			when others => -- Cae el nop
-				SALIDA_ALU <= "00000000000000000000000000000000";
-		end case;
+			when "000000" => -- add
+										SALIDA_ALU <= ENTRADA_CRS1 + ENTRADA_CRS2;
+								
+								when "010000" => -- addcc
+										SALIDA_ALU <= ENTRADA_CRS1 + ENTRADA_CRS2;
+								
+							when "001000" => -- addX
+										SALIDA_ALU <= ENTRADA_CRS1 + ENTRADA_CRS2 + CARRY;
+								
+							when "011000" => -- addXcc
+										SALIDA_ALU <= ENTRADA_CRS1 + ENTRADA_CRS2 + CARRY;
+								
+								when "000100" => -- sub
+										SALIDA_ALU <= ENTRADA_CRS1 - ENTRADA_CRS2;
+								
+								when "010100" => -- subcc
+										SALIDA_ALU <= ENTRADA_CRS1 - ENTRADA_CRS2;
+								
+								when "001100" => -- subX
+										SALIDA_ALU <= ENTRADA_CRS1 - ENTRADA_CRS2 - CARRY;
+								
+							when "011100" => -- subXcc
+										SALIDA_ALU <= ENTRADA_CRS1 - ENTRADA_CRS2 - CARRY;
+								
+								when "000001" => -- and
+										SALIDA_ALU <= ENTRADA_CRS1 and ENTRADA_CRS2;
+								
+								when "000101" => -- andn
+										SALIDA_ALU <= ENTRADA_CRS1 and not (ENTRADA_CRS2);
+								
+								when "010101" => --andNcc
+										SALIDA_ALU <= ENTRADA_CRS1 and ENTRADA_CRS2;
+								
+								when "010001" => --andcc
+										SALIDA_ALU <= ENTRADA_CRS1 and ENTRADA_CRS2;
+								
+								when "000010" => --or
+										SALIDA_ALU <= ENTRADA_CRS1 or ENTRADA_CRS2;
+								
+								when "000110" => --orn
+									SALIDA_ALU <= ENTRADA_CRS1 or not (ENTRADA_CRS2);	
+									
+								when "010010" => --orcc
+										SALIDA_ALU <= ENTRADA_CRS1 or ENTRADA_CRS2;	
+								
+								when "010110" => --orNcc
+										SALIDA_ALU <= ENTRADA_CRS1 or ENTRADA_CRS2;  
+								
+								when "000011" => -- xor
+										SALIDA_ALU <= ENTRADA_CRS1 xor ENTRADA_CRS2;
+								
+								when "000111" => -- xnor
+										SALIDA_ALU <= ENTRADA_CRS1 xnor ENTRADA_CRS2;
+								
+								when "010011" => -- xorcc
+										SALIDA_ALU <= ENTRADA_CRS1 xor ENTRADA_CRS2;				
+									
+								when others => --otras instrucciones
+											SALIDA_ALU <= "00000000000000000000000000000000";
 
-	end process;
+
+										
+						end case;
+end process;
+								
+
+
 end Behavioral;
 

@@ -113,15 +113,40 @@ COMPONENT RF
 	PORT(
 		ENTRADA_CRS1 : IN std_logic_vector(31 downto 0);
 		ENTRADA_CRS2 : IN std_logic_vector(31 downto 0);
-		OPERADOR_UC : IN std_logic_vector(5 downto 0);          
+		OPERADOR_UC : IN std_logic_vector(5 downto 0);
+		CARRY : IN std_logic;          
 		SALIDA_ALU : OUT std_logic_vector(31 downto 0)
+		);
+	
+	END COMPONENT;
+	
+	COMPONENT PSR
+	PORT(
+		ENTRADA_NZVC : IN std_logic_vector(3 downto 0);
+		RST : IN std_logic;
+		CLK : IN std_logic;          
+		CARRY : OUT std_logic
+		);
+	END COMPONENT;
+	
+	COMPONENT PSR_MODIFIER
+	PORT(
+		RST : IN std_logic;
+		SALIDA_MUX_CRS2 : IN std_logic_vector(31 downto 0);
+		CRS1 : IN std_logic_vector(31 downto 0);
+		SALIDA_UC : IN std_logic_vector(5 downto 0);
+		SALIDA_ALU : IN std_logic_vector(31 downto 0);          
+		SALIDA_NZVC : OUT std_logic_vector(3 downto 0)
 		);
 	END COMPONENT;
 
 
 
-signal ADD_NPC, NPC_PC, PC_IM, IM_UC_RF_SEU, ALU_RF, CRS1_ALU,CRS2_MUX, MUX_ALU, SEU_MUX:  STD_LOGIC_VECTOR (31 downto 0);
-signal UC_ALU : STD_LOGIC_VECTOR (5 downto 0);
+signal ADD_NPC, NPC_PC, PC_IM, IM_UC_RF_SEU, ALU_RF, CRS1_ALU,CRS2_MUX, MUX_ALU, SEU_MUX , SALIDA_MUX_CRS2,SALIDA_ALU :  STD_LOGIC_VECTOR (31 downto 0);
+signal UC_ALU , SALIDA_UC : STD_LOGIC_VECTOR (5 downto 0);
+signal CARRY : STD_LOGIC;
+signal ENTRADA_NZVC , SALIDA_NZVC : STD_LOGIC_VECTOR (3 downto 0);
+
 begin
 
 	Inst_ADD: ADD PORT MAP(
@@ -179,11 +204,31 @@ Inst_MUX: MUX PORT MAP(
 		SALIDA_SEU => SEU_MUX
 	);
 
+
+
 	Inst_ALU: ALU PORT MAP(
 		ENTRADA_CRS1 => CRS1_ALU ,
 		ENTRADA_CRS2 => MUX_ALU,
 		OPERADOR_UC => UC_ALU,
+		CARRY => CARRY,
 		SALIDA_ALU => ALU_RF
+	);
+
+
+Inst_PSR: PSR PORT MAP(
+		ENTRADA_NZVC => ENTRADA_NZVC,
+		RST => RST,
+		CLK => CLK ,
+		CARRY => CARRY
+	);
+
+Inst_PSR_MODIFIER: PSR_MODIFIER PORT MAP(
+		RST => RST ,
+		SALIDA_MUX_CRS2 => MUX_ALU,
+		CRS1 => CRS1_ALU,
+		SALIDA_UC => UC_ALU ,
+		SALIDA_ALU => ALU_RF,
+		SALIDA_NZVC => SALIDA_NZVC
 	);
 
 
