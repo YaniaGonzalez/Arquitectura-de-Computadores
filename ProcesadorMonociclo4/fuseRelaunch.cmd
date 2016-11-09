@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/tb_procesador2_isim_beh.exe" -prj "C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/tb_procesador2_beh.prj" "work.tb_procesador2" 

@@ -1,0 +1,2 @@
+vhdtdtfi -prj ProcesadorMonociclo -o C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo3/PSR.vhi -module PSR -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PSR.vhd 
+vhdtdtfi -prj ProcesadorMonociclo -o C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/PSR.vhi -module PSR -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PSR.vhd 

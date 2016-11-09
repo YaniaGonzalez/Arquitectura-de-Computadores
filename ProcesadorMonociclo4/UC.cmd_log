@@ -1,0 +1,3 @@
+vhdtdtfi -prj ProcesadorMonociclo -o "E:/Mis Documentos/Escritorio/ProcesadorMonocicloterminar/UC.vhi" -module UC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work UC.vhd 
+vhdtdtfi -lib work UC.vhd -prj ProcesadorMonociclo -o UC.spl -module UC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 UC.spl C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo3/UC.sym 
