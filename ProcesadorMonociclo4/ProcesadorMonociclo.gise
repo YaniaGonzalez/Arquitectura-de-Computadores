@@ -215,15 +215,18 @@
     <transform xil_pn:end_ts="1478477401" xil_pn:in_ck="2642068232916820747" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7753548124064191272" xil_pn:start_ts="1478477388">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="tb_procesador2_beh.prj"/>
       <outfile xil_pn:name="tb_procesador2_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1478483874" xil_pn:in_ck="-4077836466602647694" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8948042253040190907" xil_pn:start_ts="1478483873">
+    <transform xil_pn:end_ts="1478748498" xil_pn:in_ck="-4077836466602647694" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8948042253040190907" xil_pn:start_ts="1478748497">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>

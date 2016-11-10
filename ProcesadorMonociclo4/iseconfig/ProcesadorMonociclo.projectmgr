@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>procesador2 - arq_procesador2 (C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/procesador2.vhd)</SelectedItem>
+         <SelectedItem>Inst_WINDOWS_MANAGER - WINDOWS_MANAGER - Behavioral (C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/WINDOWS_MANAGER.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000003e5000000020000000000000000000000000200000064ffffffff000000810000000300000002000003e50000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>procesador2 - arq_procesador2 (C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/procesador2.vhd)</CurrentItem>
+      <CurrentItem>Inst_WINDOWS_MANAGER - WINDOWS_MANAGER - Behavioral (C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/WINDOWS_MANAGER.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -64,9 +64,9 @@
       <SelectedItems>
          <SelectedItem>Check Syntax</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010a0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000011b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000011b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Check Syntax</CurrentItem>
    </ItemView>
@@ -80,13 +80,13 @@
          <ClosedNode>/tb_PC - behavior C:|Users|Propietario_|Arquitectura-de-Computadores|ProcesadorMonociclo|tb_PC.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_procesador2 - behavior (C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/tb_procesador2.vhd)</SelectedItem>
+         <SelectedItem>tb_WINDOWS_MANAGER - behavior (C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/tb_WINDOWS_MANAGER.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >23</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >21</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000003f9000000020000000000000000000000000200000064ffffffff000000810000000300000002000003f90000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>tb_procesador2 - behavior (C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/tb_procesador2.vhd)</CurrentItem>
+      <CurrentItem>tb_WINDOWS_MANAGER - behavior (C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/tb_WINDOWS_MANAGER.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -94,13 +94,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000011b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000011b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>

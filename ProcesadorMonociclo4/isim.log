@@ -20,5 +20,3 @@ ERROR: Index 32 out of bound 0 to 31.
 ERROR: In process IM.vhd:63 
  
 INFO: Simulator is stopped.
-# run 100ns
-INFO: Simulator is stopped.

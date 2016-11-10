@@ -8,6 +8,42 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/ADD.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/ALU.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/IM.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/MUX.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/NPC.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/PC.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/PSR.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/PSR_MODIFIER.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/RF.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/SEU.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/UC.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/WINDOWS_MANAGER.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Propietario_/Arquitectura-de-Computadores/ProcesadorMonociclo4/procesador2.vhd&quot; into library work</arg>
 </msg>
 
